@@ -66,13 +66,13 @@ int main() {
 
     printf("OK, Confirma Carta Cadastrada? \n");
     
-    printf("País: %s\n", NomePais);
-    printf("Estado: %s\n", NomeEstado);
-    printf("Cidade: %s\n", NomeCidade);
-    printf("População: %d\n", Populacao);
-    printf("Área Total: %f km²\n", Area);
-    printf("PIB: %f bilhões de reais\n", PIB);
-    printf("Pontos Turísticos: %d\n", PTuristicos);
+    printf("País: %s\n", NomePais); // Linha para visualização do País
+    printf("Estado: %s\n", NomeEstado); // Linha para visualização do Estado
+    printf("Cidade: %s\n", NomeCidade); // Linha para visualização da Cidade
+    printf("População: %d\n", Populacao); // Linha para visualização da População
+    printf("Área Total: %f km²\n", Area); // Linha para visualização da Área
+    printf("PIB: %f bilhões de reais\n", PIB); // Linha para visualização do PIB
+    printf("Pontos Turísticos: %d\n", PTuristicos); // Linha para visualização dos Pontos Turísticos
 
 
 
