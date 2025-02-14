@@ -1,0 +1,80 @@
+#include <stdio.h>
+
+int main() {
+
+    // Variáveis Cartas
+
+    char codigo [3];
+    char NomeCidade [50];
+    char NomeEstado [50];
+    char NomePais [50];
+    int PTuristicos, Populacao;
+    float Area, PIB;
+
+
+    // Realizando o Cadastro das Cartas
+
+    printf("Cadastre sua carta! \n");
+
+        // Cadastrando o nome do País
+    printf("Qual o País? \n");
+    scanf( " %[^\n]", &NomePais);
+
+        // Cadastrando o nome do Estado
+    printf("Qual o Estado? \n");
+    scanf(" %[^\n]", &NomeEstado);
+
+        // Cadastrando o código da Cidade
+    printf("Digite o código da carta: \n");
+    scanf(" %s", codigo);
+
+        // Cadastrando o nome da Cidade
+    printf("Qual a Cidade? \n");
+    scanf(" %[^\n]", &NomeCidade);
+
+        // Cadastrando o número da População
+    printf("Certo! Qual a quantidade da população? \n");
+    scanf("%d", &Populacao);
+
+        // Cadastrando qual a área total
+    printf("Qual o tamanho da sua área (km²)? \n");
+    scanf("%f", &Area);
+
+        // Cadastrando o PIB
+    printf("Qual é o PIB da cidade (Bilhões)? \n");
+    scanf("%f", &PIB);
+
+        // Cadastrando a quantidade de pontos turísticos
+    printf("Por último, quantos pontos turísticos tem na cidade? \n");
+    scanf("%d", &PTuristicos);
+    
+
+     //Cálculo de Densidade populacional e PIB per capita
+
+     float DensidadePopulacao, PIBPerCapita;
+
+     DensidadePopulacao = (float) Populacao / Area;
+     PIBPerCapita = (float) PIB / Populacao;
+
+
+
+    // Exibição dos Dados das Cartas:
+
+    printf("OK, Carta Cadastrada! \n");
+    
+    printf("\n");
+
+    printf("País: %s\n", NomePais); // Linha para visualização do País
+    printf("Estado: %s\n", NomeEstado); // Linha para visualização do Estado
+    printf("Cidade: %s\n", NomeCidade); // Linha para visualização da Cidade
+    printf("População: %d\n", Populacao); // Linha para visualização da População
+    printf("Área Total: %.2f km²\n", Area); // Linha para visualização da Área
+    printf("Densidade Populacional: %.2f \n", DensidadePopulacao); //Linha para visualização da Densidade Populacional
+    printf("PIB: %.2f bilhões de reais\n", PIB); // Linha para visualização do PIB
+    printf("PIB per Capita: %.2f \n", PIBPerCapita); //Linha para visualização do PIB per Capita
+    printf("Pontos Turísticos: %d\n", PTuristicos); // Linha para visualização dos Pontos Turísticos
+
+
+
+    return 0;
+}
