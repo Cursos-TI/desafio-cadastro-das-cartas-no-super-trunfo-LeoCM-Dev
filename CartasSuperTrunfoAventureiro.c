@@ -33,6 +33,7 @@ int main() {
     scanf(" %[^\n]", NomeCidade);
 
         // Cadastrando o número da População
+
     printf("Certo! Qual a quantidade da população? \n");
     scanf("%d", &Populacao);
 
@@ -54,17 +55,13 @@ int main() {
      float DensidadePopu, PIBPerCapita;
 
      DensidadePopu = (float) Populacao / Area;
-     PIBPerCapita = (float) PIB / (float) Populacao;
+     PIBPerCapita = PIB / (float) Populacao;
 
-     printf("\n");
-
-     printf("Primeira Carta Cadastrada! \n");
-
-     printf("\n");
+     printf("\n Primeira Carta Cadastrada! \n");
 
     // Exibição Carta 01
 
-    printf("Carta 1 \n");
+    printf("\nCarta 1 \n");
     printf("Código da Carta: %s \n", codigo); // Linhas para visualização do código da carta
     printf("País: %s\n", NomePais); // Linha para visualização do País
     printf("Estado: %s\n", NomeEstado); // Linha para visualização do Estado
@@ -73,7 +70,7 @@ int main() {
     printf("Área Total: %.2f km²\n", Area); // Linha para visualização da Área
     printf("Densidade Populacional: %.2f \n", DensidadePopu); //Linha para visualização da Densidade Populacional
     printf("PIB: %.2f bilhões de reais\n", PIB); // Linha para visualização do PIB
-    printf("PIB per Capita: %.2f\n", PIBPerCapita); //Linha para visualização do PIB per Capita
+    printf("PIB per Capita: %.2f reais \n", PIBPerCapita); //Linha para visualização do PIB per Capita
     printf("Pontos Turísticos: %d\n", PTuristicos); // Linha para visualização dos Pontos Turísticos
 
     printf("\n");
@@ -99,7 +96,7 @@ int main() {
 
         // Cadastrando o código da Cidade
      printf("Digite o código da carta: \n");
-     scanf(" %s", codigo2);
+     scanf(" %2s", codigo2);
 
         // Cadastrando o nome da Cidade
      printf("Qual a Cidade? \n");
@@ -107,7 +104,7 @@ int main() {
 
         // Cadastrando o número da População
      printf("Certo! Qual a quantidade da população? \n");
-     scanf("%d", &Populacao2);
+     scanf(" %d", &Populacao2);
 
         // Cadastrando qual a área total
      printf("Qual o tamanho da sua área (km²)? \n");
@@ -149,10 +146,11 @@ int main() {
     printf("Área Total: %.2f km²\n", Area2); // Linha para visualização da Área
     printf("Densidade Populacional: %.2f \n", DensidadePopulacao2); //Linha para visualização da Densidade Populacional
     printf("PIB: %.2f bilhões de reais\n", PIB2); // Linha para visualização do PIB
-    printf("PIB per Capita: %.2f \n", PIBPerCapita2); //Linha para visualização do PIB per Capita
+    printf("PIB per Capita: %.2f reais \n", PIBPerCapita2); //Linha para visualização do PIB per Capita
     printf("Pontos Turísticos: %d\n", PTuristicos2); // Linha para visualização dos Pontos Turísticos
 
 
 
     return 0;
+    
 }
